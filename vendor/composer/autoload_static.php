@@ -6,22 +6,105 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit2185d2f99bcd56787481d9357a5972d3
 {
+    public static $files = array (
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
+        'S' =>
+        array (
+            'Symfony\\Polyfill\\Php80\\' => 23,
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Ctype\\' => 23,
+        ),
         'P' =>
         array (
+            'PhpOption\\' => 10,
             'PHPMailer\\PHPMailer\\' => 20,
+        ),
+        'G' =>
+        array (
+            'GrahamCampbell\\ResultType\\' => 26,
+        ),
+        'D' =>
+        array (
+            'Dotenv\\' => 7,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Symfony\\Polyfill\\Php80\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
+        ),
+        'Symfony\\Polyfill\\Mbstring\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Ctype\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'PhpOption\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
+        ),
         'PHPMailer\\PHPMailer\\' =>
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
+        'GrahamCampbell\\ResultType\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/graham-campbell/result-type/src',
+        ),
+        'Dotenv\\' =>
+        array (
+            0 => __DIR__ . '/..' . '/vlucas/phpdotenv/src',
+        ),
     );
 
     public static $classMap = array (
+        'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
+        'AuthType' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/AuthType/AuthType.php',
+        'AuthType_Basic' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/AuthType/Basic.php',
+        'AuthType_Oauth' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/AuthType/Oauth.php',
+        'AuthType_TokenRequest' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/AuthType/TokenRequest.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'OauthCacheFile' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/Oauth/Cache/OauthCacheFile.php',
+        'OauthCacheInterface' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/Oauth/Cache/OauthCacheInterface.php',
+        'OauthCacheMemcached' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/Oauth/Cache/OauthCacheMemcached.php',
+        'OauthGrantType' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/Oauth/OauthGrantType.php',
+        'OauthResultClientCredentials' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/Oauth/OauthResultClientCredentials.php',
+        'OpenPayU' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/OpenPayU.php',
+        'OpenPayU_Configuration' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/Configuration.php',
+        'OpenPayU_Exception' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/OpenPayUException.php',
+        'OpenPayU_Exception_Authorization' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/OpenPayUException.php',
+        'OpenPayU_Exception_Configuration' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/OpenPayUException.php',
+        'OpenPayU_Exception_Network' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/OpenPayUException.php',
+        'OpenPayU_Exception_Request' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/OpenPayUException.php',
+        'OpenPayU_Exception_ServerError' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/OpenPayUException.php',
+        'OpenPayU_Exception_ServerMaintenance' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/OpenPayUException.php',
+        'OpenPayU_Http' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/Http.php',
+        'OpenPayU_HttpCurl' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/HttpCurl.php',
+        'OpenPayU_Oauth' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/Oauth/Oauth.php',
+        'OpenPayU_Order' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/v2/Order.php',
+        'OpenPayU_Refund' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/v2/Refund.php',
+        'OpenPayU_Result' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/Result.php',
+        'OpenPayU_Retrieve' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/v2/Retrieve.php',
+        'OpenPayU_Shop' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/v2/Shop.php',
+        'OpenPayU_Token' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/v2/Token.php',
+        'OpenPayU_Util' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/Util.php',
+        'OpenPayuOrderStatus' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/OpenPayuOrderStatus.php',
+        'OpenPayuRefundStatus' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/OpenPayuRefundStatus.php',
+        'PayuShop' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/Model/PayuShop.php',
+        'PayuShopBalance' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/Model/PayuShop/PayuShopBalance.php',
+        'PhpToken' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/PhpToken.php',
+        'ResultError' => __DIR__ . '/..' . '/openpayu/openpayu_php_sdk/lib/OpenPayU/ResultError.php',
+        'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
+        'UnhandledMatchError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
+        'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
